@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="ServeEventsPages">
+        <crown name="ServeEventsPages">
+            <desc>user script</desc>
+            <serves>
+                <event name="OnMyEvent">
+                    <desc>No description yet...</desc>
+                    <param name="myParameter" type="string" desc="No description yet..."/>
+                </event>
+            </serves>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">2.5.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="tags">Serves,Page</meta>
+        <entry path="pages" default="EventsPages.msdd">
+            <file type="application/zip">EventsPages.msdd</file>
+        </entry>
+        <entry path="scripts" default="ServingEvent.lua">
+            <file type="text/x-lua">ServingEvent.lua</file>
+        </entry>
+    </application>
+</manifest>
